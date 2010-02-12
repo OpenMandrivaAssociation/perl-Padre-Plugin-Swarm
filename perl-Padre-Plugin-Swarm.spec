@@ -21,6 +21,8 @@ BuildRequires: perl(Padre)
 BuildRequires: perl(Params::Util)
 BuildRequires: perl(Test::More)
 BuildRequires: perl(Text::Patch)
+BuildRequires: x11-server-xvfb
+
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
@@ -40,11 +42,10 @@ demo :)
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
-
 %make
 
 %check
-%make test
+xvfb-run %make test
 
 %install
 rm -rf %buildroot
@@ -58,5 +59,3 @@ rm -rf %buildroot
 %doc META.yml README Changes
 %{_mandir}/man3/*
 %perl_vendorlib/*
-
-
