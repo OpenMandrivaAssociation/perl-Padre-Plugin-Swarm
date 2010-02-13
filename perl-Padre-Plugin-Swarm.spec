@@ -1,5 +1,5 @@
 %define upstream_name    Padre-Plugin-Swarm
-%define upstream_version 0.08
+%define upstream_version 0.092
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
