@@ -17,6 +17,7 @@ BuildRequires: perl(Graph)
 BuildRequires: perl(IO::Select)
 BuildRequires: perl(IO::Socket::Multicast)
 BuildRequires: perl(JSON::XS)
+BuildRequires: perl-JSON-PP
 BuildRequires: perl(Padre)
 BuildRequires: perl(Params::Util)
 BuildRequires: perl(Test::More)
