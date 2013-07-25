@@ -1,15 +1,15 @@
 %define upstream_name    Padre-Plugin-Swarm
-%define upstream_version 0.1
+%define upstream_version 0.11
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%perl_convert_version 0.11
+Release:	1
 
 Summary:	Tree view panel of swarm resources
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Padre/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Padre/Padre-Plugin-Swarm-0.11.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Class::XSAccessor)
@@ -80,3 +80,4 @@ xvfb-run %make test
 
 * Fri Feb 12 2010 cpan2dist 0.08-1mdv
 - initial mdv release, generated with cpan2dist
+
