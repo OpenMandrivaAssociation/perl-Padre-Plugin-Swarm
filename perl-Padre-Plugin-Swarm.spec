@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version 0.11
-Release:	2
+Release:	3
 
 Summary:	Tree view panel of swarm resources
 License:	GPL+ or Artistic
